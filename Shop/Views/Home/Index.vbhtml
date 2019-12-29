@@ -1,5 +1,5 @@
 ﻿@Code
-    ViewData("Title") = "Home Page"
+    ViewData("Title") = "فروشگاه اینترنتی اسپاد"
 End Code
 
 <div class="jumbotron">

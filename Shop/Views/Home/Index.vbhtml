@@ -4,7 +4,7 @@ End Code
 
 <div class="jumbotron">
     <h1>فروشگاه اینترنتی اسپاد</h1>
-    <p class="lead">فروشگاه اینترنتی اسپاد در سال 98 شروع بع کار کرده است</p>
+    <p class="lead">فروشگاه اینترنتی اسپاد در سال 98 شروع به کار کرده است</p>
     <p><a href="https://asp.net" class="btn btn-primary btn-lg">اطلاع بیشتر &raquo;</a></p>
 </div>
 

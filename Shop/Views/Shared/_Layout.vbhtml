@@ -9,7 +9,36 @@
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:white">
+        <div class="container">
+            <div class="navbar-collapse collapse">
+                <span>
+                </span>
+                <span class="pull-left">
+                    <ul class="nav navbar-nav" style="color:#9d9d9d">
+                        <il>
+                            @Html.Partial("_LoginPartial")
+                        </il>
+                    </ul>
+                    <ul class="nav navbar-nav" style="margin-top:15px;color:#9d9d9d">
+                        <il>
+                            |
+                        </il>
+                    </ul>
+                    <ul class="nav navbar-nav" style="margin-top:15px;color:#9d9d9d">
+                        <il>
+                            سبد خرید
+                        </il>
+                    </ul>
+                </span>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <h6 class="pull-left">
+                    @Html.ActionLink("SpadWear", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
+                </h6>
+            </div>
+            </div>
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -17,20 +46,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h1>
-                    @Html.ActionLink("SpadWear", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
-                </h1>
+
             </div>
-            <div class="navbar-collapse collapse pull-left">
+            <div class="navbar-collapse collapse pull-right">
+
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("صفحه اصلی", "Index", "Home")</li>
                     <li>@Html.ActionLink("درباره ما", "About", "Home")</li>
                     <li>@Html.ActionLink("تماس با ما", "Contact", "Home")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+            </div>
             </div>
         </div>
-    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />

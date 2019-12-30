@@ -11,8 +11,9 @@
         </ul>
     End Using
 Else
-    @<ul class="nav navbar-nav navbar-right">
-    <li>@Html.ActionLink("ورود", "Login", "Account", routeValues:=Nothing, htmlAttributes:=New With {.id = "loginLink"})</li>
+    @<ul class="nav navbar-nav pull-right">
+    <li>@Html.ActionLink("ورود", "Login", "Account", routeValues:=Nothing, htmlAttributes:=New With {.id = "loginLink"})</li> 
+    <li style="margin-top:15px;color:#9d9d9d">|</li>
     <li>@Html.ActionLink("ثبت نام", "Register", "Account", routeValues:=Nothing, htmlAttributes:=New With {.id = "registerLink"})</li>
 </ul>
 End If

@@ -25,19 +25,20 @@
                             |
                         </il>
                     </ul>
-                    <ul class="nav navbar-nav" style="margin-top:15px;color:#9d9d9d">
+                    <ul class="nav navbar-nav" style="margin-top:15px;margin-right:5px;color:#9d9d9d">
                         <il>
                             سبد خرید
                         </il>
                     </ul>
                 </span>
+                @Html.ActionLink("SpadWear", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
 
             </div>
-            <div class="navbar-collapse collapse">
+            <hr style="margin-top:0px"/>
+            @*<div class="navbar-collapse collapse">
                 <h6 class="pull-left">
-                    @Html.ActionLink("SpadWear", "Index", "Home", New With {.area = ""}, New With {.class = "navbar-brand"})
                 </h6>
-            </div>
+            </div>*@
             </div>
         <div class="container">
             <div class="navbar-header">

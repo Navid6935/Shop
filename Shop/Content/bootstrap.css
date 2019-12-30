@@ -101,6 +101,7 @@ hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
+  colo
 }
 pre {
   overflow: auto;
@@ -6835,5 +6836,23 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+.m-t1{
+    margin-top:10px
+}
+.m-t2 {
+    margin-top: 20px
+}
+.m-t3 {
+    margin-top: 30px
+}
+.m-t4 {
+    margin-top: 40px
+}
+.m-t5 {
+    margin-top: 50px
+}
+.m-t6 {
+    margin-top: 60px
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -6,22 +6,30 @@
     <title>@ViewBag.Title - SpadWear</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    <style>
+        .btn-success
+        {
+            background-color:#fff;
+            color:#5cb85c;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:white">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:white;border-bottom-color:#e6e4e4;box-shadow:0 2px 4px 0 rgba(0,0,0,.1)">
         <div class="container-fluid">
             <div class="navbar-collapse collapse">
                 <span>
                 </span>
                 <span class="pull-left">
-                    <ul class="nav navbar-nav" style="color:#9d9d9d">
+                    <ul class="nav navbar-nav hidden-xs" style="color:#9d9d9d">
                         <il>
                             @Html.Partial("_LoginPartial")
                         </il>
                     </ul>
-                    <ul class="nav navbar-nav" style="margin-top:15px;color:#9d9d9d">
-                        <il style="font-size:30px">
+                    <ul class="nav navbar-nav hidden-xs" style="margin-top:15px;color:#9d9d9d">
+                        <il style="        font-size: 30px
+">
                             |
                         </il>
                     </ul>
@@ -42,7 +50,7 @@
             </div>
         <div class="container-fluid">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" style="background-color:black" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -72,6 +80,24 @@
 
             </div>
         </div>
+    <div class="container">
+        <div class="row"  style="margin-top:80px">
+            <div class="col-lg-8 col-lg-offset-2">
+                <div id="PerchaseCarouel" class="carousel slide"  data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="" src="~/Images/Aban-98.jpg" alt="" style="display:block;width:100%" />
+                        </div>
+                        <div class="item">
+                            <img src="~/Images/Esfand-98.jpg" alt="" style="display:block;width:100%" />
+                        </div>
+                    </div>
+                    <a href="#PerchaseCarouel" class="carousel-control previous"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
@@ -98,11 +124,7 @@
 
   }
         });
-    //    $(".TopMenu").mouseover(function () {
-    //        $(this).animate({
-    //    width:"2px"
-    //}, 500 );
-        })
+
     </script>
 </body>
 </html>

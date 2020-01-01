@@ -1092,7 +1092,7 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
-    background-color: #fff;
+    background-color: #eee;
 }
 input,
 button,
@@ -4691,10 +4691,9 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 /*استایل لینک های واقع در هدر*/
         .navbar-inverse .navbar-nav > li > a:hover,
         .navbar-inverse .navbar-nav > li > a:focus {
-            color: #3c763d;
-            background-color: transparent;
-            border-bottom: solid 2px #a94442;
-            transition: border-bottom 0.6s ease-in-out;
+            color: #fff;
+            background-color: #9d9d9d;
+            transition:0.4s;
         }
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
